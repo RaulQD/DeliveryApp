@@ -1,0 +1,32 @@
+@use 'variables' as * ;
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+h1,h2,h3{
+    margin: 0 0 $separation 0;
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size:2.5rem;
+}
