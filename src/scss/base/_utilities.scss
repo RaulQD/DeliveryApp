@@ -1,5 +1,16 @@
-.container{
-    max-width: 120rem;
-    width:90%;
-    margin:0 auto;
+@use 'variables' as *;
+@use 'mixins' as m;
+
+
+.bg-primario {
+    background-color: $colorMain;
+}
+.main{
+    overflow: hidden;
+}
+.section{
+    padding:7.2rem 0 1.6rem;
+    @include m.tablet { 
+        padding: 11.4rem 0 1.6rem;
+     }
 }

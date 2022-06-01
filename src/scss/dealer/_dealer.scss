@@ -1,0 +1,47 @@
+@use 'base/variables' as *;
+@use 'base/mixins' as m;
+
+.dealer{
+
+    &__grid{
+        @include m.tablet { 
+            @include m.grid(2,4rem);
+         }
+    }
+    &__title{
+        text-align: center;
+        color:$secondColor;
+    }
+    &__image{
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    &__description{
+        color:$secondColor;
+        font-size: 1.7rem;
+        text-align: center;
+        @include m.tablet { 
+            text-align: left;
+         }
+    }
+    &__button{
+        background-color: $colorMain;
+        padding:1.5rem 3rem;
+        width: 100%; 
+        display: block;
+        text-align: center;
+        color:$whiteColor;
+        border-radius: 15px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        @include m.tablet { 
+            width:auto;
+         }
+    }
+}

@@ -1,0 +1,54 @@
+@use 'base/variables' as *;
+@use 'base/mixins' as m;
+
+.app{
+    background-color: $greyColor;
+    margin-top: 2rem;
+    &__grid{
+        @include m.tablet { 
+            @include m.grid(2,5rem);
+         }
+    }
+    &__title{
+        color:$secondColor;
+        text-align: center;
+    }
+    &__image{
+        width:50%;
+        margin: 0 auto 5rem auto;
+        transition-property: transform;
+        transition-duration: 300ms;
+        &:hover{
+            transform:rotate(4deg) scale(1.1);
+        }
+    }
+    &__store{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+    &__subtitle{
+        text-align: center;
+        color:$secondColor;
+        margin-bottom: 1rem;
+    }
+    &__second--subtitle{
+        text-align: center;
+        margin-bottom: 4rem;
+        font-size: 1.8rem;
+    }
+    &__image--store{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:2rem;
+    }
+    &__link{
+        transition-property: transform;
+        transition-duration: 500ms;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+}

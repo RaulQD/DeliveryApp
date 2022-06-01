@@ -18,7 +18,7 @@ function css(done) {
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(postcss([autoprefixer()]))
-        .pipe(cssnano())
+        // .pipe(cssnano())
         .pipe(sourcemaps.write('.'))
         .pipe(dest('build/css'));
     done();

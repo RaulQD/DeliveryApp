@@ -1,0 +1,15 @@
+@use 'base/variables' as * ;
+@use 'base/mixins' as m;
+
+
+.test{
+    &__title{
+        text-align: center;
+        color:$secondColor;
+    }
+    &__grid{
+        @include m.tablet { 
+            @include m.grid(5,2rem);
+        }
+    }
+}
