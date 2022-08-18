@@ -1,968 +1,633 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, 
     initial-scale=1.0" />
-    
+
     <title>App Delivery</title>
     <link rel="shortcut icon" href="build/img/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="build/css/app.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">
-          <img src="build/img/logo.svg" alt="logo" />
-        </a>
-        <div class="menu" id="nav-menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#finder" class="menu__links menu__links--active"
-                >Busca tú restaurant</a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="#steps" class="menu__links">¿Como Funciona?</a>
-            </li>
-            <li class="menu__item">
-              <a href="#test" class="menu__links">Opiniones</a>
-            </li>
-            <li class="menu__item">
-              <a href="#rest" class="menu__links">Restaurants</a>
-            </li>
-            <li class="menu__item">
-              <a href="#dealer" class="menu__links">Información</a>
-            </li>
-            <li class="menu__item">
-              <a href="#app" class="menu__links">Nuestra App</a>
-            </li>
-          </ul>
-          <div class="menu__close" id="menu-close">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-        </div>
-        <div class="nav__toggle" id="menu-toggle">
-          <i class="fa-solid fa-bars-staggered"></i>
-        </div>
-      </nav>
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="build/img/logo.svg" alt="logo" />
+            </a>
+            <div class="menu" id="nav-menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#finder" class="menu__links menu__links--active">Busca tú restaurant</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#steps" class="menu__links">¿Como Funciona?</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#test" class="menu__links">Opiniones</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#rest" class="menu__links">Restaurants</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#dealer" class="menu__links">Información</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#app" class="menu__links">Nuestra App</a>
+                    </li>
+                </ul>
+                <div class="menu__close" id="menu-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="nav__toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </nav>
     </header>
     <main class="main">
-      <!----------- FORM -------->
-      <section class="section form" id="finder">
-        <div class="container">
-          <div class="form__grid">
-            <div class="form__content">
-              <h2 class="form__title">
-                Encuentra y pide comida de tú restaurant favorito
-              </h2>
-              <form class="form__buscar">
-                <div class="form__campo">
-                  <label for="restaurant" class="form__label">Restaurant</label>
-                  <input
-                    type="text"
-                    class="form__input"
-                    placeholder="Buscar tu restaurant"
-                    id="restaurant"
-                  />
+        <!----------- FORM -------->
+        <section class="section form" id="finder">
+            <div class="container">
+                <div class="form__grid">
+                    <div class="form__content">
+                        <h2 class="form__title">
+                            Encuentra y pide comida de tú restaurant favorito
+                        </h2>
+                        <form class="form__buscar">
+                            <div class="form__campo">
+                                <label for="restaurant" class="form__label">Restaurant</label>
+                                <input type="text" class="form__input" placeholder="Buscar tu restaurant"
+                                    id="restaurant" />
+                            </div>
+                            <div class="form__campo">
+                                <label for="platillos" class="form__label">Platillos</label>
+                                <input type="text" class="form__input" placeholder="Pizza, Ensalada, Lomo saltado"
+                                    id="platillos" />
+                            </div>
+                            <button type="submit" class="form__button">
+                                <i class="fa-solid fa-magnifying-glass"></i>Buscar
+                            </button>
+                        </form>
+                    </div>
+                    <div class="form__image--container">
+                        <img src="build/img/dibujo_repartidor.svg" alt="imagen repartidor" class="form__image" />
+                    </div>
                 </div>
-                <div class="form__campo">
-                  <label for="platillos" class="form__label">Platillos</label>
-                  <input
-                    type="text"
-                    class="form__input"
-                    placeholder="Pizza, Ensalada, Lomo saltado"
-                    id="platillos"
-                  />
+            </div>
+        </section>
+        <!----------- STEPS -------->
+        <section class="section steps" id="steps">
+            <img class="steps__wave" src="build/img/wave.svg" alt="wave" />
+            <div class="steps__content">
+                <h2 class="steps__title">
+                    ¿Comó Funciona?
+                    <span class="steps__title--description">tan facil como 1, 2 y 3</span>
+                </h2>
+                <div class="steps__grid container">
+                    <div class="steps__image--content">
+                        <picture>
+                            <source srcset="build/img/paso_1.avif" type="image/avif" />
+                            <source srcset="build/img/paso_1.webp" type="image/webp" />
+                            <img class="steps__img" loading="lazy" src="build/img/paso_1.png" alt="paso_1" />
+                        </picture>
+                    </div>
+                    <div class="steps__image--content">
+                        <picture>
+                            <source srcset="build/img/paso_2.avif" type="image/avif" />
+                            <source srcset="build/img/paso_2.webp" type="image/webp" />
+                            <img class="steps__img" loading="lazy" src="build/img/paso_2.png" alt="paso_2" />
+                        </picture>
+                    </div>
+                    <div class="steps__image--content">
+                        <picture>
+                            <source srcset="build/img/paso_3.avif" type="image/avif" />
+                            <source srcset="build/img/paso_3.webp" type="image/webp" />
+                            <img class="steps__img" loading="lazy" src="build/img/paso_3.png" alt="paso_3" />
+                        </picture>
+                    </div>
                 </div>
-                <button type="submit" class="form__button">
-                  <i class="fa-solid fa-magnifying-glass"></i>Buscar
-                </button>
-              </form>
             </div>
-            <div class="form__image--container">
-              <img
-                src="build/img/dibujo_repartidor.svg"
-                alt="imagen repartidor"
-                class="form__image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!----------- STEPS -------->
-      <section class="section steps" id="steps">
-        <img class="steps__wave" src="build/img/wave.svg" alt="wave" />
-        <div class="steps__content">
-          <h2 class="steps__title">
-            ¿Comó Funciona?
-            <span class="steps__subtitle">tan facil como 1, 2 y 3</span>
-          </h2>
-          <div class="steps__grid container">
-            <div class="steps__image--content">
-              <picture>
-                <source srcset="build/img/paso_1.avif" type="image/avif" />
-                <source srcset="build/img/paso_1.webp" type="image/webp" />
-                <img
-                  class="steps__img"
-                  loading="lazy"
-                  src="build/img/paso_1.png"
-                  alt="paso_1"
-                />
-              </picture>
-            </div>
-            <div class="steps__image--content">
-              <picture>
-                <source srcset="build/img/paso_2.avif" type="image/avif" />
-                <source srcset="build/img/paso_2.webp" type="image/webp" />
-                <img
-                  class="steps__img"
-                  loading="lazy"
-                  src="build/img/paso_2.png"
-                  alt="paso_2"
-                />
-              </picture>
-            </div>
-            <div class="steps__image--content">
-              <picture>
-                <source srcset="build/img/paso_3.avif" type="image/avif" />
-                <source srcset="build/img/paso_3.webp" type="image/webp" />
-                <img
-                  class="steps__img"
-                  loading="lazy"
-                  src="build/img/paso_3.png"
-                  alt="paso_3"
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-------------- TESTIMONIALS ----------------->
-      <section class="section test" id="test">
-        <div class="test__container container">
-          <h2 class="test__title">Testimoniales</h2>
-          <div class="test__grid">
-            <div class="opinions">
-              <header class="opinions__header">
-                <div class="opinions__img">
-                  <picture>
-                    <source
-                      srcset="build/img/testimonial1.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/testimonial1.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="opinions__perfil"
-                      loading="lazy"
-                      src="build/img/testimonial1.png"
-                      alt=""
-                    />
-                  </picture>
+        <!-------------- TESTIMONIALS ----------------->
+        <section class="section test" id="test">
+            <div class="test__container container">
+                <h2 class="test__title">Testimoniales</h2>
+                <div class="test__grid">
+                    <div class="opinions">
+                        <header class="opinions__header">
+                            <div class="opinions__img">
+                                <picture>
+                                    <source srcset="build/img/testimonial1.avif" type="image/avif" />
+                                    <source srcset="build/img/testimonial1.webp" type="image/webp" />
+                                    <img class="opinions__perfil" loading="lazy" src="build/img/testimonial1.png"
+                                        alt="" />
+                                </picture>
+                            </div>
+                            <div class="opinions__info">
+                                <p class="opinions__author">Juan Peréz</p>
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="stars" />
+                                </picture>
+                            </div>
+                        </header>
+                        <blockquote class="opinions__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Inventore earum nesciunt, excepturi debitis reprehenderit
+                            voluptas. Similique explicabo vel tempore officiis expedita,
+                            accusantium ab repellendus laboriosam magni adipisci quam! Modi,
+                            ex?
+                        </blockquote>
+                    </div>
+                    <div class="opinions">
+                        <header class="opinions__header">
+                            <div class="opinions__img">
+                                <picture>
+                                    <source srcset="build/img/testimonial2.avif" type="image/avif" />
+                                    <source srcset="build/img/testimonial2.webp" type="image/webp" />
+                                    <img class="opinions__perfil" loading="lazy" src="build/img/testimonial2.png"
+                                        alt="" />
+                                </picture>
+                            </div>
+                            <div class="opinions__info">
+                                <p class="opinions__author">Cynthia Vladir</p>
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="stars" />
+                                </picture>
+                            </div>
+                        </header>
+                        <blockquote class="opinions__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Inventore earum nesciunt, excepturi debitis reprehenderit.
+                        </blockquote>
+                    </div>
+                    <div class="opinions">
+                        <header class="opinions__header">
+                            <div class="opinions__img">
+                                <picture>
+                                    <source srcset="build/img/testimonial3.avif" type="image/avif" />
+                                    <source srcset="build/img/testimonial3.webp" type="image/webp" />
+                                    <img class="opinions__perfil" loading="lazy" src="build/img/testimonial3.png"
+                                        alt="" />
+                                </picture>
+                            </div>
+                            <div class="opinions__info">
+                                <p class="opinions__author">Jose Hernandez</p>
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="stars" />
+                                </picture>
+                            </div>
+                        </header>
+                        <blockquote class="opinions__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Inventore earum nesciunt, excepturi debitis reprehenderit.
+                        </blockquote>
+                    </div>
+                    <div class="opinions">
+                        <header class="opinions__header">
+                            <div class="opinions__img">
+                                <picture>
+                                    <source srcset="build/img/testimonial4.avif" type="image/avif" />
+                                    <source srcset="build/img/testimonial4.webp" type="image/webp" />
+                                    <img class="opinions__perfil" loading="lazy" src="build/img/testimonial4.png"
+                                        alt="" />
+                                </picture>
+                            </div>
+                            <div class="opinions__info">
+                                <p class="opinions__author">Rocio Rodriguez</p>
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="stars" />
+                                </picture>
+                            </div>
+                        </header>
+                        <blockquote class="opinions__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Inventore earum nesciunt, excepturi debitis reprehenderit
+                            voluptas. Similique explicabo vel tempore officiis expedita,
+                            accusantium ab repellendus.
+                        </blockquote>
+                    </div>
+                    <div class="opinions">
+                        <header class="opinions__header">
+                            <div class="opinions__img">
+                                <picture>
+                                    <source srcset="build/img/testimonial5.avif" type="image/avif" />
+                                    <source srcset="build/img/testimonial5.webp" type="image/webp" />
+                                    <img class="opinions__perfil" loading="lazy" src="build/img/testimonial5.png"
+                                        alt="" />
+                                </picture>
+                            </div>
+                            <div class="opinions__info">
+                                <p class="opinions__author">Itzel Cruz</p>
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="stars" />
+                                </picture>
+                            </div>
+                        </header>
+                        <blockquote class="opinions__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Inventore earum nesciunt.
+                        </blockquote>
+                    </div>
                 </div>
-                <div class="opinions__info">
-                  <p class="opinions__author">Juan Peréz</p>
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="stars"
-                    />
-                  </picture>
-                </div>
-              </header>
-              <blockquote class="opinions__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore earum nesciunt, excepturi debitis reprehenderit
-                voluptas. Similique explicabo vel tempore officiis expedita,
-                accusantium ab repellendus laboriosam magni adipisci quam! Modi,
-                ex?
-              </blockquote>
             </div>
-            <div class="opinions">
-              <header class="opinions__header">
-                <div class="opinions__img">
-                  <picture>
-                    <source
-                      srcset="build/img/testimonial2.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/testimonial2.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="opinions__perfil"
-                      loading="lazy"
-                      src="build/img/testimonial2.png"
-                      alt=""
-                    />
-                  </picture>
+        </section>
+        <!---------------- RESTAURANTS ---------------->
+        <section class="section rest" id="rest">
+            <div class="rest__container">
+                <h2 class="rest__title">Restaurantes Favoritos</h2>
+                <div class="rest__grid--content container">
+                    <div class="rest__content">
+                        <div class="rest__grid">
+                            <div class="rest__image">
+                                <picture>
+                                    <source srcset="build/img/logo_ensaladas.avif" type="image/avif" />
+                                    <source srcset="build/img/logo_ensaladas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/logo_ensaladas.png" alt="logo logo_ensaladas" />
+                                </picture>
+                            </div>
+                            <div class="rest__description">
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="estrellas" />
+                                </picture>
+                                <h3 class="rest__subtitle">Green Ensaladas</h3>
+                                <p class="rest__info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor fugiat voluptatum error doloribus vero eligendi
+                                    reprehenderit aspernatur exercitationem nobis tempore,
+                                    deleniti minima est velit libero unde deserunt esse!
+                                    Inventore, numquam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rest__content">
+                        <div class="rest__grid">
+                            <div class="rest__image">
+                                <picture>
+                                    <source srcset="build/img/logo_ensaladas.avif" type="image/avif" />
+                                    <source srcset="build/img/logo_ensaladas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/logo_ensaladas.png" alt="logo logo_ensaladas" />
+                                </picture>
+                            </div>
+                            <div class="rest__description">
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="estrellas" />
+                                </picture>
+                                <h3 class="rest__subtitle">Green Ensaladas</h3>
+                                <p class="rest__info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor fugiat voluptatum error doloribus vero eligendi
+                                    reprehenderit aspernatur exercitationem nobis tempore,
+                                    deleniti minima est velit libero unde deserunt esse!
+                                    Inventore, numquam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rest__content">
+                        <div class="rest__grid">
+                            <div class="rest__image">
+                                <picture>
+                                    <source srcset="build/img/logo_ensaladas.avif" type="image/avif" />
+                                    <source srcset="build/img/logo_ensaladas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/logo_ensaladas.png" alt="logo logo_ensaladas" />
+                                </picture>
+                            </div>
+                            <div class="rest__description">
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="estrellas" />
+                                </picture>
+                                <h3 class="rest__subtitle">Green Ensaladas</h3>
+                                <p class="rest__info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor fugiat voluptatum error doloribus vero eligendi
+                                    reprehenderit aspernatur exercitationem nobis tempore,
+                                    deleniti minima est velit libero unde deserunt esse!
+                                    Inventore, numquam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rest__content">
+                        <div class="rest__grid">
+                            <div class="rest__image">
+                                <picture>
+                                    <source srcset="build/img/logo_ensaladas.avif" type="image/avif" />
+                                    <source srcset="build/img/logo_ensaladas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/logo_ensaladas.png" alt="logo logo_ensaladas" />
+                                </picture>
+                            </div>
+                            <div class="rest__description">
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="estrellas" />
+                                </picture>
+                                <h3 class="rest__subtitle">Green Ensaladas</h3>
+                                <p class="rest__info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor fugiat voluptatum error doloribus vero eligendi
+                                    reprehenderit aspernatur exercitationem nobis tempore,
+                                    deleniti minima est velit libero unde deserunt esse!
+                                    Inventore, numquam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rest__content">
+                        <div class="rest__grid">
+                            <div class="rest__image">
+                                <picture>
+                                    <source srcset="build/img/logo_ensaladas.avif" type="image/avif" />
+                                    <source srcset="build/img/logo_ensaladas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/logo_ensaladas.png" alt="logo logo_ensaladas" />
+                                </picture>
+                            </div>
+                            <div class="rest__description">
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="estrellas" />
+                                </picture>
+                                <h3 class="rest__subtitle">Green Ensaladas</h3>
+                                <p class="rest__info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor fugiat voluptatum error doloribus vero eligendi
+                                    reprehenderit aspernatur exercitationem nobis tempore,
+                                    deleniti minima est velit libero unde deserunt esse!
+                                    Inventore, numquam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rest__content">
+                        <div class="rest__grid">
+                            <div class="rest__image">
+                                <picture>
+                                    <source srcset="build/img/logo_ensaladas.avif" type="image/avif" />
+                                    <source srcset="build/img/logo_ensaladas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/logo_ensaladas.png" alt="logo logo_ensaladas" />
+                                </picture>
+                            </div>
+                            <div class="rest__description">
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="estrellas" />
+                                </picture>
+                                <h3 class="rest__subtitle">Green Ensaladas</h3>
+                                <p class="rest__info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor fugiat voluptatum error doloribus vero eligendi
+                                    reprehenderit aspernatur exercitationem nobis tempore,
+                                    deleniti minima est velit libero unde deserunt esse!
+                                    Inventore, numquam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rest__content">
+                        <div class="rest__grid">
+                            <div class="rest__image">
+                                <picture>
+                                    <source srcset="build/img/logo_ensaladas.avif" type="image/avif" />
+                                    <source srcset="build/img/logo_ensaladas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/logo_ensaladas.png" alt="logo logo_ensaladas" />
+                                </picture>
+                            </div>
+                            <div class="rest__description">
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="estrellas" />
+                                </picture>
+                                <h3 class="rest__subtitle">Green Ensaladas</h3>
+                                <p class="rest__info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor fugiat voluptatum error doloribus vero eligendi
+                                    reprehenderit aspernatur exercitationem nobis tempore,
+                                    deleniti minima est velit libero unde deserunt esse!
+                                    Inventore, numquam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rest__content">
+                        <div class="rest__grid">
+                            <div class="rest__image">
+                                <picture>
+                                    <source srcset="build/img/logo_ensaladas.avif" type="image/avif" />
+                                    <source srcset="build/img/logo_ensaladas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/logo_ensaladas.png" alt="logo logo_ensaladas" />
+                                </picture>
+                            </div>
+                            <div class="rest__description">
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="estrellas" />
+                                </picture>
+                                <h3 class="rest__subtitle">Green Ensaladas</h3>
+                                <p class="rest__info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor fugiat voluptatum error doloribus vero eligendi
+                                    reprehenderit aspernatur exercitationem nobis tempore,
+                                    deleniti minima est velit libero unde deserunt esse!
+                                    Inventore, numquam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rest__content">
+                        <div class="rest__grid">
+                            <div class="rest__image">
+                                <picture>
+                                    <source srcset="build/img/logo_ensaladas.avif" type="image/avif" />
+                                    <source srcset="build/img/logo_ensaladas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/logo_ensaladas.png" alt="logo logo_ensaladas" />
+                                </picture>
+                            </div>
+                            <div class="rest__description">
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="estrellas" />
+                                </picture>
+                                <h3 class="rest__subtitle">Green Ensaladas</h3>
+                                <p class="rest__info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor fugiat voluptatum error doloribus vero eligendi
+                                    reprehenderit aspernatur exercitationem nobis tempore,
+                                    deleniti minima est velit libero unde deserunt esse!
+                                    Inventore, numquam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rest__content">
+                        <div class="rest__grid">
+                            <div class="rest__image">
+                                <picture>
+                                    <source srcset="build/img/logo_ensaladas.avif" type="image/avif" />
+                                    <source srcset="build/img/logo_ensaladas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/logo_ensaladas.png" alt="logo logo_ensaladas" />
+                                </picture>
+                            </div>
+                            <div class="rest__description">
+                                <picture>
+                                    <source srcset="build/img/estrellas.avif" type="image/avif" />
+                                    <source srcset="build/img/estrellas.webp" type="image/webp" />
+                                    <img loading="lazy" src="build/img/estrellas.png" alt="estrellas" />
+                                </picture>
+                                <h3 class="rest__subtitle">Green Ensaladas</h3>
+                                <p class="rest__info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor fugiat voluptatum error doloribus vero eligendi
+                                    reprehenderit aspernatur exercitationem nobis tempore,
+                                    deleniti minima est velit libero unde deserunt esse!
+                                    Inventore, numquam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="opinions__info">
-                  <p class="opinions__author">Cynthia Vladir</p>
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="stars"
-                    />
-                  </picture>
-                </div>
-              </header>
-              <blockquote class="opinions__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore earum nesciunt, excepturi debitis reprehenderit.
-              </blockquote>
             </div>
-            <div class="opinions">
-              <header class="opinions__header">
-                <div class="opinions__img">
-                  <picture>
-                    <source
-                      srcset="build/img/testimonial3.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/testimonial3.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="opinions__perfil"
-                      loading="lazy"
-                      src="build/img/testimonial3.png"
-                      alt=""
-                    />
-                  </picture>
+        </section>
+        <section class="section dealer" id="dealer">
+            <div class="dealer__container">
+                <h2 class="dealer__title">Gana dinero con DelearApp</h2>
+                <div class="dealer__grid container">
+                    <div class="dealer__image">
+                        <picture>
+                            <source srcset="build/img/repartidor.avif" type="image/avif" />
+                            <source srcset="build/img/repartidor.webp" type="image/webp" />
+                            <img loading="lazy" src="build/img/repartidor.png" alt="repartidor" />
+                        </picture>
+                    </div>
+                    <div class="dealer__info">
+                        <p class="dealer__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Corporis cumque doloremque blanditiis hic doloribus iure quo ut
+                            perspiciatis, maiores molestiae eveniet ad fugiat odio, natus et
+                            facilis ipsa omnis eaque. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Cum quod ex dolorem debitis fuga rem
+                            repudiandae sapiente non accusantium pariatur.
+                        </p>
+                        <p class="dealer__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Mollitia dignissimos fugit aperiam. Delectus asperiores aperiam,
+                            est ea cupiditate temporibus repudiandae labore animi dolores
+                            harum nulla inventore iste repellendus, itaque dicta!
+                        </p>
+                        <a href="#" class="dealer__button">Más información</a>
+                    </div>
                 </div>
-                <div class="opinions__info">
-                  <p class="opinions__author">Jose Hernandez</p>
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="stars"
-                    />
-                  </picture>
-                </div>
-              </header>
-              <blockquote class="opinions__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore earum nesciunt, excepturi debitis reprehenderit.
-              </blockquote>
             </div>
-            <div class="opinions">
-              <header class="opinions__header">
-                <div class="opinions__img">
-                  <picture>
-                    <source
-                      srcset="build/img/testimonial4.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/testimonial4.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="opinions__perfil"
-                      loading="lazy"
-                      src="build/img/testimonial4.png"
-                      alt=""
-                    />
-                  </picture>
+        </section>
+        <section class="section app" id="app">
+            <h2 class="app__title">Descarga la DeliveryApp</h2>
+            <div class="app__grid container">
+                <div class="app__image">
+                    <picture>
+                        <source srcset="build/img/app.avif" type="image/avif" />
+                        <source srcset="build/img/app.webp" type="image/webp" />
+                        <img loading="lazy" src="build/img/app.png" alt="app" />
+                    </picture>
                 </div>
-                <div class="opinions__info">
-                  <p class="opinions__author">Rocio Rodriguez</p>
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="stars"
-                    />
-                  </picture>
+                <div class="app__store">
+                    <h3 class="app__subtitle">Descargalo Gratis</h3>
+                    <span class="app__second--subtitle">Disponible para Android y IOS</span>
+                    <div class="app__image--store">
+                        <a href="#" class="app__link">
+                            <img src="build/img/tienda-android.svg" alt="tienda-android" />
+                        </a>
+                        <a href="#" class="app__link">
+                            <img src="build/img/tienda-apple.svg" alt="tienda-apple" />
+                        </a>
+                    </div>
                 </div>
-              </header>
-              <blockquote class="opinions__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore earum nesciunt, excepturi debitis reprehenderit
-                voluptas. Similique explicabo vel tempore officiis expedita,
-                accusantium ab repellendus.
-              </blockquote>
             </div>
-            <div class="opinions">
-              <header class="opinions__header">
-                <div class="opinions__img">
-                  <picture>
-                    <source
-                      srcset="build/img/testimonial5.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/testimonial5.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="opinions__perfil"
-                      loading="lazy"
-                      src="build/img/testimonial5.png"
-                      alt=""
-                    />
-                  </picture>
-                </div>
-                <div class="opinions__info">
-                  <p class="opinions__author">Itzel Cruz</p>
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="stars"
-                    />
-                  </picture>
-                </div>
-              </header>
-              <blockquote class="opinions__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore earum nesciunt.
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!---------------- RESTAURANTS ---------------->
-      <section class="section rest" id="rest">
-        <div class="rest__container">
-          <h2 class="rest__title">Restaurantes Favoritos</h2>
-          <div class="rest__grid--content container">
-            <div class="rest__content">
-              <div class="rest__grid">
-                <div class="rest__image">
-                  <picture>
-                    <source
-                      srcset="build/img/logo_ensaladas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/logo_ensaladas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/logo_ensaladas.png"
-                      alt="logo logo_ensaladas"
-                    />
-                  </picture>
-                </div>
-                <div class="rest__description">
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="estrellas"
-                    />
-                  </picture>
-                  <h3 class="rest__subtitle">Green Ensaladas</h3>
-                  <p class="rest__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor fugiat voluptatum error doloribus vero eligendi
-                    reprehenderit aspernatur exercitationem nobis tempore,
-                    deleniti minima est velit libero unde deserunt esse!
-                    Inventore, numquam!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="rest__content">
-              <div class="rest__grid">
-                <div class="rest__image">
-                  <picture>
-                    <source
-                      srcset="build/img/logo_ensaladas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/logo_ensaladas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/logo_ensaladas.png"
-                      alt="logo logo_ensaladas"
-                    />
-                  </picture>
-                </div>
-                <div class="rest__description">
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="estrellas"
-                    />
-                  </picture>
-                  <h3 class="rest__subtitle">Green Ensaladas</h3>
-                  <p class="rest__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor fugiat voluptatum error doloribus vero eligendi
-                    reprehenderit aspernatur exercitationem nobis tempore,
-                    deleniti minima est velit libero unde deserunt esse!
-                    Inventore, numquam!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="rest__content">
-              <div class="rest__grid">
-                <div class="rest__image">
-                  <picture>
-                    <source
-                      srcset="build/img/logo_ensaladas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/logo_ensaladas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/logo_ensaladas.png"
-                      alt="logo logo_ensaladas"
-                    />
-                  </picture>
-                </div>
-                <div class="rest__description">
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="estrellas"
-                    />
-                  </picture>
-                  <h3 class="rest__subtitle">Green Ensaladas</h3>
-                  <p class="rest__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor fugiat voluptatum error doloribus vero eligendi
-                    reprehenderit aspernatur exercitationem nobis tempore,
-                    deleniti minima est velit libero unde deserunt esse!
-                    Inventore, numquam!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="rest__content">
-              <div class="rest__grid">
-                <div class="rest__image">
-                  <picture>
-                    <source
-                      srcset="build/img/logo_ensaladas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/logo_ensaladas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/logo_ensaladas.png"
-                      alt="logo logo_ensaladas"
-                    />
-                  </picture>
-                </div>
-                <div class="rest__description">
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="estrellas"
-                    />
-                  </picture>
-                  <h3 class="rest__subtitle">Green Ensaladas</h3>
-                  <p class="rest__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor fugiat voluptatum error doloribus vero eligendi
-                    reprehenderit aspernatur exercitationem nobis tempore,
-                    deleniti minima est velit libero unde deserunt esse!
-                    Inventore, numquam!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="rest__content">
-              <div class="rest__grid">
-                <div class="rest__image">
-                  <picture>
-                    <source
-                      srcset="build/img/logo_ensaladas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/logo_ensaladas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/logo_ensaladas.png"
-                      alt="logo logo_ensaladas"
-                    />
-                  </picture>
-                </div>
-                <div class="rest__description">
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="estrellas"
-                    />
-                  </picture>
-                  <h3 class="rest__subtitle">Green Ensaladas</h3>
-                  <p class="rest__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor fugiat voluptatum error doloribus vero eligendi
-                    reprehenderit aspernatur exercitationem nobis tempore,
-                    deleniti minima est velit libero unde deserunt esse!
-                    Inventore, numquam!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="rest__content">
-              <div class="rest__grid">
-                <div class="rest__image">
-                  <picture>
-                    <source
-                      srcset="build/img/logo_ensaladas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/logo_ensaladas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/logo_ensaladas.png"
-                      alt="logo logo_ensaladas"
-                    />
-                  </picture>
-                </div>
-                <div class="rest__description">
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="estrellas"
-                    />
-                  </picture>
-                  <h3 class="rest__subtitle">Green Ensaladas</h3>
-                  <p class="rest__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor fugiat voluptatum error doloribus vero eligendi
-                    reprehenderit aspernatur exercitationem nobis tempore,
-                    deleniti minima est velit libero unde deserunt esse!
-                    Inventore, numquam!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="rest__content">
-              <div class="rest__grid">
-                <div class="rest__image">
-                  <picture>
-                    <source
-                      srcset="build/img/logo_ensaladas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/logo_ensaladas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/logo_ensaladas.png"
-                      alt="logo logo_ensaladas"
-                    />
-                  </picture>
-                </div>
-                <div class="rest__description">
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="estrellas"
-                    />
-                  </picture>
-                  <h3 class="rest__subtitle">Green Ensaladas</h3>
-                  <p class="rest__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor fugiat voluptatum error doloribus vero eligendi
-                    reprehenderit aspernatur exercitationem nobis tempore,
-                    deleniti minima est velit libero unde deserunt esse!
-                    Inventore, numquam!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="rest__content">
-              <div class="rest__grid">
-                <div class="rest__image">
-                  <picture>
-                    <source
-                      srcset="build/img/logo_ensaladas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/logo_ensaladas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/logo_ensaladas.png"
-                      alt="logo logo_ensaladas"
-                    />
-                  </picture>
-                </div>
-                <div class="rest__description">
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="estrellas"
-                    />
-                  </picture>
-                  <h3 class="rest__subtitle">Green Ensaladas</h3>
-                  <p class="rest__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor fugiat voluptatum error doloribus vero eligendi
-                    reprehenderit aspernatur exercitationem nobis tempore,
-                    deleniti minima est velit libero unde deserunt esse!
-                    Inventore, numquam!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="rest__content">
-              <div class="rest__grid">
-                <div class="rest__image">
-                  <picture>
-                    <source
-                      srcset="build/img/logo_ensaladas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/logo_ensaladas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/logo_ensaladas.png"
-                      alt="logo logo_ensaladas"
-                    />
-                  </picture>
-                </div>
-                <div class="rest__description">
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="estrellas"
-                    />
-                  </picture>
-                  <h3 class="rest__subtitle">Green Ensaladas</h3>
-                  <p class="rest__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor fugiat voluptatum error doloribus vero eligendi
-                    reprehenderit aspernatur exercitationem nobis tempore,
-                    deleniti minima est velit libero unde deserunt esse!
-                    Inventore, numquam!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="rest__content">
-              <div class="rest__grid">
-                <div class="rest__image">
-                  <picture>
-                    <source
-                      srcset="build/img/logo_ensaladas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/logo_ensaladas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/logo_ensaladas.png"
-                      alt="logo logo_ensaladas"
-                    />
-                  </picture>
-                </div>
-                <div class="rest__description">
-                  <picture>
-                    <source
-                      srcset="build/img/estrellas.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="build/img/estrellas.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      loading="lazy"
-                      src="build/img/estrellas.png"
-                      alt="estrellas"
-                    />
-                  </picture>
-                  <h3 class="rest__subtitle">Green Ensaladas</h3>
-                  <p class="rest__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor fugiat voluptatum error doloribus vero eligendi
-                    reprehenderit aspernatur exercitationem nobis tempore,
-                    deleniti minima est velit libero unde deserunt esse!
-                    Inventore, numquam!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section dealer" id="dealer">
-        <div class="dealer__container">
-          <h2 class="dealer__title">Gana dinero con DelearApp</h2>
-          <div class="dealer__grid container">
-            <div class="dealer__image">
-              <picture>
-                <source srcset="build/img/repartidor.avif" type="image/avif" />
-                <source srcset="build/img/repartidor.webp" type="image/webp" />
-                <img
-                  loading="lazy"
-                  src="build/img/repartidor.png"
-                  alt="repartidor"
-                />
-              </picture>
-            </div>
-            <div class="dealer__info">
-              <p class="dealer__description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Corporis cumque doloremque blanditiis hic doloribus iure quo ut
-                perspiciatis, maiores molestiae eveniet ad fugiat odio, natus et
-                facilis ipsa omnis eaque. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Cum quod ex dolorem debitis fuga rem
-                repudiandae sapiente non accusantium pariatur.
-              </p>
-              <p class="dealer__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia dignissimos fugit aperiam. Delectus asperiores aperiam,
-                est ea cupiditate temporibus repudiandae labore animi dolores
-                harum nulla inventore iste repellendus, itaque dicta!
-              </p>
-              <a href="#" class="dealer__button">Más información</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section app" id="app">
-        <h2 class="app__title">Descarga la DeliveryApp</h2>
-        <div class="app__grid container">
-          <div class="app__image">
-            <picture>
-              <source srcset="build/img/app.avif" type="image/avif" />
-              <source srcset="build/img/app.webp" type="image/webp" />
-              <img loading="lazy" src="build/img/app.png" alt="app" />
-            </picture>
-          </div>
-          <div class="app__store">
-            <h3 class="app__subtitle">Descargalo Gratis</h3>
-            <span class="app__second--subtitle"
-              >Disponible para Android y IOS</span
-            >
-            <div class="app__image--store">
-              <a href="#" class="app__link">
-                <img src="build/img/tienda-android.svg" alt="tienda-android" />
-              </a>
-              <a href="#" class="app__link">
-                <img src="build/img/tienda-apple.svg" alt="tienda-apple" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
     <footer class="footer">
-      <div class="footer__grid container">
-        <div class="footer__logo">
-          <img src="build/img/logo.svg" alt="logo" />
+        <div class="footer__grid container">
+            <div class="footer__logo">
+                <img src="build/img/logo.svg" alt="logo" />
+            </div>
+            <div class="footer__content">
+                <h2 class="footer__title">Atención al Cliente</h2>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__links">Preguntas frecuentes</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__links">Politicas de Delivery</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__links">Terminos y Condiciones</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__links">Libro de Reclamos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h2 class="footer__title">Contactanos</h2>
+                <ul class="footer__list">
+                    <li class="footer__items">
+                        <p class="footer__description">
+                            <span class="footer__info">Atención al cliente:</span>
+                            Lima: 12:00 P.M a 10:00 P.M - Provincia : 12:00 P.M a 8:00 P.M
+                        </p>
+                    </li>
+                    <li class="footer__items">
+                        <p class="footer__description">
+                            <span class="footer__info">Centro Lima:</span>
+                            (01) 000 0000
+                        </p>
+                    </li>
+                    <li class="footer__items">
+                        <p class="footer__description">
+                            <span class="footer__info">Huancayo:</span>
+                            (01) 000 0000
+                        </p>
+                    </li>
+                    <li class="footer__items">
+                        <p class="footer__description">
+                            <span class="footer__info">Correo:</span>
+                            example@gmail.com
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="footer__content">
-          <h2 class="footer__title">Atención al Cliente</h2>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#" class="footer__links">Preguntas frecuentes</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__links">Politicas de Delivery</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__links">Terminos y Condiciones</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__links">Libro de Reclamos</a>
-            </li>
-          </ul>
+        <div class="footer__copy">
+            <p class="footer__copy--alright">&#169 - Todos los derechos son reservados</p>
         </div>
-        <div class="footer__content">
-          <h2 class="footer__title">Contactanos</h2>
-          <ul class="footer__list">
-            <li class="footer__items">
-              <p class="footer__description">
-                <span class="footer__info">Atención al cliente:</span>
-                Lima: 12:00 P.M a 10:00 P.M - Provincia : 12:00 P.M a 8:00 P.M
-              </p>
-            </li>
-            <li class="footer__items">
-              <p class="footer__description">
-                <span class="footer__info">Centro Lima:</span>
-                (01) 000 0000
-              </p>
-            </li>
-            <li class="footer__items">
-              <p class="footer__description">
-                <span class="footer__info">Huancayo:</span>
-                (01) 000 0000
-              </p>
-            </li>
-            <li class="footer__items">
-              <p class="footer__description">
-                <span class="footer__info">Correo:</span>
-                example@gmail.com
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__copy">
-        <p class="footer__copy--alright">&#169 - Todos los derechos son reservados</p>
-      </div>
     </footer>
-    <script
-      src="https://kit.fontawesome.com/06d585022a.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/06d585022a.js" crossorigin="anonymous"></script>
     <script src="build/js/app.js"></script>
-  </body>
+</body>
+
 </html>

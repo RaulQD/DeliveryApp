@@ -1,66 +1,78 @@
-@use 'base/variables' as * ;
+@use 'base/variables' as *;
 @use 'base/mixins' as m;
 
-.form{    
-    &__grid{
-        @include m.tablet { 
+.form {
+    margin-top: 4rem;
+
+    &__grid {
+        @include m.tablet {
             @include m.grid(2, 5rem)
         }
     }
-    
-    &__content{
+
+    &__content {
         background-color: $colorMain;
         border-radius: 10px;
-        padding:5rem;
+        padding: 5rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    &__campo{
-        margin-bottom:2rem;
+
+    &__campo {
+        margin-bottom: 2rem;
     }
-    &__label{
-        color:$whiteColor;
+
+    &__label {
+        color: $whiteColor;
         text-transform: uppercase;
-        margin: 1rem 0 ;
+        margin: 1rem 0;
         display: block;
     }
-    &__input{
+
+    &__input {
         width: 100%;
-        padding:1.5rem;
+        padding: 1.5rem;
         border: none;
         border-radius: 10px;
     }
-    &__button{
-        padding:1.5rem;
+
+    &__button {
+        padding: 1.5rem;
         border: none;
         border-radius: 10px;
-        background-color:$secondColor;
-        color:$whiteColor;
-        width:100%;
+        background-color: $secondColor;
+        color: $whiteColor;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: .5rem;
         cursor: pointer;
     }
-    &__title{
-        color:$whiteColor;
+
+    &__title {
+        color: $whiteColor;
         text-align: center;
         line-height: 1.2;
-        @include m.tablet { 
-            font-size:2.9rem;
-         }
+        font-size: 2.5rem;
+
+        @include m.tablet {
+            font-size: 2.9rem;
+        }
     }
-    &__image--container{
+
+    &__image--container {
         margin-top: $separation;
         display: flex;
         justify-content: center;
     }
-    &__image{
+
+    &__image {
         width: 30rem;
-        @include m.tablet { 
-            width:100%;
-         }
+
+        @include m.tablet {
+            width: 100%;
+        }
     }
 }

@@ -5,12 +5,15 @@
 .bg-primario {
     background-color: $colorMain;
 }
-.main{
+
+.main {
     overflow: hidden;
 }
-.section{
-    padding:7.2rem 0 1.6rem;
-    @include m.tablet { 
+
+.section {
+    padding: 7.2rem 0 1.6rem;
+
+    @include m.tablet {
         padding: 11.4rem 0 1.6rem;
-     }
+    }
 }

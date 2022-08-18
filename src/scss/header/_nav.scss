@@ -1,32 +1,37 @@
 @use 'base/variables' as *;
 @use 'base/mixins' as m;
 
-.nav{
+.nav {
     margin-top: 0.5rem;
     height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
-    @include m.tablet { 
-        height: calc(65px + 20px);
-     }
 
-    &__toggle{
+    @include m.tablet {
+        height: calc(65px + 20px);
+    }
+
+    &__toggle {
         cursor: pointer;
         font-size: 2rem;
         display: inline-flex;
-        @include m.tablet { 
-            display:none;
-         }
+
+        @include m.tablet {
+            display: none;
+        }
     }
-    &__logo{
-        width:18rem;
-        @include m.tablet { 
-            width:20rem;
-         }
-         @include m.desktop { 
-             width:22rem;
-          }
+
+    &__logo {
+        width: 16rem;
+
+        @include m.tablet {
+            width: 18rem;
+        }
+
+        @include m.desktop {
+            width: 20rem;
+        }
     }
 }

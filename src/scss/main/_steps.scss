@@ -1,36 +1,45 @@
-@use 'base/variables' as * ;
+@use 'base/variables' as *;
 @use 'base/mixins' as m;
 
-.steps{
-    &__wave{
-        position: relative;
+.steps {
+    &__wave {
         margin-bottom: -1px;
     }
-    &__content{
+
+    &__content {
         background-color: $colorMain;
     }
-    &__title{
-        position:absolute;
-        width: 100%;
-        height: 100%;
-        top:105rem;
-        bottom:210rem;
+
+    &__title {
         text-align: center;
-        color:$whiteColor;
+        color: $whiteColor;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+
+        @include m.tablet {
+            font-size: 3rem;
+        }
+
+        &--description {
+            font-size: 1.4rem;
+            display: block;
+
+            @include m.tablet {
+                font-size: 1.8rem;
+            }
+        }
     }
-    &__subtitle{
-        color:$whiteColor;
-        font-size: 1.7rem;
-        display: block;
-    }
-    &__grid{
-        @include m.tablet { 
+
+    &__grid {
+        @include m.tablet {
             @include m.grid(3, 5rem)
-         }
+        }
     }
-    &__img{
+
+    &__img {
         transition: transform 300ms ease-in-out;
-        &:hover{
+
+        &:hover {
             transform: rotate(-4deg) scale(1.1);
         }
     }
